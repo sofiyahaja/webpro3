@@ -171,7 +171,7 @@ public function ubahProfil()
                     $this->load->view('templates/templates-user/modal');
                     $this->load->view('templates/templates-user/footer', $data);
                 } else {
-...}
+                }
 
             }
   
