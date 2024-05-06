@@ -64,7 +64,10 @@ class ModelBuku extends CI_Model
     {
         $this->db->update('kategori', $data, $where);
     }
-
+    public function getLimitBuku(){
+        $this->db->limit(5);
+        return $this->db->get('buku');
+    }  
     //join
     public function joinKategoriBuku($where)
     {
